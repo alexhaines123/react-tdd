@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import RestaurantListPage from './RestaurantListPage';
+import NewRestaurantForm from './NewRestaurantForm';
 
-export default class App extends React.Component {
-  state = { name: 'hello world' }
-  render() {
-    return <div className='hello'>{this.state.name}</div>
-  }
-}
+const App = () => {
+
+  return (
+    <div>
+      <RestaurantListPage />
+
+    </div>
+  );
+};
+
+export default App;
